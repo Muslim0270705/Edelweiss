@@ -1,0 +1,39 @@
+.compilation{
+  
+  margin-bottom: 120px;
+
+  &__wrapper{
+    background: url('../../img/Home/compilation-bg.jpg') center/cover no-repeat;
+    padding: 55px 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+  }
+  
+  &__img-box{
+    width: 483px;  
+    height: 306px;
+  }
+  
+  &__btn{
+    font-family: 'PF-Din-Text-Cond-Pro-Medium';
+    padding: 20px 32px;
+    font-weight: 500;
+  }
+
+  &__title{
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.117;
+    color: #fff;
+  }
+  
+  &__desc{
+    font-family: 'PF-Din-Display-Pro';
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #8490a4;
+    margin: 1.75rem 0;
+    max-width: 35rem;
+  }
+}

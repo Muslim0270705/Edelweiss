@@ -1,0 +1,65 @@
+.games{
+
+  &__list{
+    display: flex;
+    column-gap: 40px;
+  }
+
+  &__li{
+    width: calc(16.66666% - 33.33333px);
+
+    &:hover
+    .games__price-span-icon{
+      fill: #000;
+    }
+
+    &:hover
+    &-box{
+      color: #000;
+      background-color: #a7e200;
+      transition: none;
+    }
+
+    &:hover
+    &-img{
+      scale: (1.1);
+      transition: 1s ease;
+    }
+
+
+    &-img{
+      overflow: hidden;
+      transition: 1s ease;
+    }
+
+    &-box{
+      position: relative;
+      top: -6px;
+      padding: 16px;
+      border-radius: 0px 0px 6px 6px;
+      background-color: transparent;
+      z-index: -1;
+    }
+  }
+
+  &__li-img-box{
+    font-size: 0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  &__title{
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 0.25rem;
+  }
+  &__price{
+    display: flex;
+    line-height: 1;
+    align-items: center;
+    font-size: 16px;
+    column-gap: 5px;
+  }
+}

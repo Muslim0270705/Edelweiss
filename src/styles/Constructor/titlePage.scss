@@ -1,0 +1,43 @@
+.title-page{
+  position: relative;
+  &__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__wrap{
+    padding: 50px 356px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title{
+      white-space: nowrap;
+      text-align: center;
+      font-size: 4rem;
+      line-height: 1.12;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-weight: normal;
+      z-index: 1;
+    }
+    &-desc{
+      font-family: 'PF-Din-Display-Pro';
+      font-size: 1.5rem;
+      line-height: 1.33;
+      text-align: center;
+      color: #8490a4;
+      max-width: 42.4375rem;
+      margin: 0 auto 0.5rem;
+    }
+    &-btn{
+      margin-top: 16px;
+      line-height: 3.625rem;
+      padding: 0 32px;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: .03em;
+    }
+  }
+
+}

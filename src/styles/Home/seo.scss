@@ -1,0 +1,35 @@
+.seo{
+  margin: 120px 0;
+
+  &__text{
+    display: flex;
+    column-gap: 150px;
+  }
+
+  &__start{
+    width: 40%;
+   
+    &>p{
+      font-family: 'PF-Din-Display-Pro';
+      line-height: 1.5;
+      color: #8490a4;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+}
+.signature{
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  &__position{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+  }
+  &__name{
+    font-size: 24px;
+    line-height: 1.33;
+    color: #a7e200;
+  }
+}

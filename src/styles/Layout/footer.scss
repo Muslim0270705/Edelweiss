@@ -1,0 +1,148 @@
+.footer{
+  background-color: #212936;
+  position: relative;
+
+  &__head{
+    background-color: #1c232e;;
+    padding: 24px 0;
+  }
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+  &__start{
+    width: 250px;
+  }
+
+  &__end{
+    margin-left: 32px;
+    width: calc(100% - 30%);
+  }
+
+  &__menu-top{
+    display: flex;
+    justify-content: space-between;
+    &-link{
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+  }
+
+
+
+  &__body{
+    padding: 20px 0 32px;
+    border-bottom: 1px solid #3f4c5f;
+  }
+
+  &__sn{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    &-li{
+      margin-right: 40px;
+    }
+
+    &-li > a{
+      color: #5f697a;
+    }
+    &-li > a:hover{
+      color: #fff;
+    }
+  }
+  &__address{
+    font-style: normal;
+    color: #A7E200;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  &__contact{
+    color: #5f697a;
+    
+    &-tel{
+      display: block;
+      margin: 7px 0 13px;
+    } 
+  }
+  &__title{
+    font-size: 24px;
+    line-height: 1;
+    color: #5f697a;
+    margin-bottom: 32.5px;
+    margin-top: 15px;
+  }
+
+  &__catalog-list{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  &__catalog-category-li {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 16px;
+    &::before{
+      content: "";
+      width: 4px;
+      height: 4px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -2px;
+      background-color: #5f697a;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+
+  
+  
+  &__catalog-link {
+    font-size: 16px;
+    color: white;
+    transition: .3s ease;
+    &:hover{
+      transition: .3s ease;
+      color: #A7E200;
+    }
+  }
+
+  &__foot{
+    padding: 15px 0;
+  }
+
+  &__partner-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+}
+
+
+.footer__bott{
+  padding: 35px 0;
+}
+
+.footer__bott > .footer__wrapper{
+  display: flex;
+}
+
+
+.footer__bott-list{
+  display: flex;
+  column-gap: 20px;
+}
+.footer__bott-li > a{
+  font-size: 14px;  
+  text-decoration: underline;
+  color: #5f697a;
+  &:hover{
+    color: #fff;
+  }
+}

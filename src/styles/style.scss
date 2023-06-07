@@ -1,0 +1,183 @@
+@import "font.css";
+
+html{
+  font-family: "PF-Din-Text-Cond-Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+}
+
+body{
+  min-height: 100%;
+  height: 100%;
+  background-color: #151a22;
+  color: #c3cee1;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/bg.png');
+  background-repeat: repeat;
+  background-position: 50% 50%;
+}
+
+*{
+  font-family: PF-Din-Text-Cond-Pro, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  height: auto;
+}
+
+a{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  color: #A7E200;
+  text-decoration: none;
+  line-height: 1;
+  transition: 0.3s ease;
+}
+
+
+a:hover{
+  transition: 0.3s ease;
+  color: #fff;
+  background-color: transparent;
+}
+
+
+.container{
+  max-width: 1440px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  border: 0;
+}
+
+.btn{
+  background: #a7e200;
+  color: #0b132b;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover{
+    background: #d3ff58;
+  }
+}
+
+.btn-secondary{
+  font-size: 12px;
+  color: #a7e200;
+  background-color: #2c3849;
+  border-radius: 4px;
+  letter-spacing: .03em;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover{
+    background: #3c4a60;
+    color: #a7e200;
+  }
+}
+
+.btn-secondary > a {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.title{
+  font-size: 32px;
+  color: white;
+  font-weight: 400;
+}
+
+.instruktion{
+  fill: #2c3849;
+  &:hover{
+    fill: #8490a4;
+  }
+}
+
+.not-found{
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  &:first-child{
+    margin-bottom: 100px;
+  }
+}
+.popup{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000099;
+  z-index: 100;
+  text-align: center;
+  .popup__close {
+    position: absolute;
+    top: 94px;
+    left: 1152px;
+    cursor: pointer;
+  }
+  &__card{
+    width: calc(33.33333% - 20px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-img{
+      width: 50%;
+    }
+  }
+  &__input{
+    margin: 80px;
+    width: 60%;
+    padding: 10px 0 10px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+  &__row{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@import "Layout/header";
+@import "Layout/footer.scss";
+@import "Home/slider.scss";
+@import "Home/mainSection.scss";
+@import "card.scss";
+@import "Home/catalog.scss";
+@import "Home/advatages.scss";
+@import "Home/compilation.scss";
+@import "Home/games.scss";
+@import "Home/seo.scss";
+@import "./Constructor/titlePage.scss";
+@import "./Constructor/features.scss";
+@import "./game.scss";
+@import "./basket.scss"

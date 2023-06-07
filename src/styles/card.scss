@@ -1,0 +1,125 @@
+.card{
+  width: calc(25% - 30px);
+  background-color: #1c232e;
+  margin-bottom: 10px;
+  position: relative;
+  &__content{
+    padding: 200px 24px 13px;
+  }
+  
+  &__title{
+    font-size: 24px;
+  }
+
+  &__img{
+    position: absolute;
+    display: inline-block;
+    top: -5%;
+    left: 15%;
+
+  }
+  &__price{
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    &-text{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: .03em;
+      color: #a7e200;
+    }
+    &-instruktion{
+      margin-top: 3px;
+      margin-left: 8px;
+    }
+  }
+
+  &__controll{
+    display: flex;
+    column-gap: 12px;
+    margin: 12px 0;
+    &-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.14;
+    height: 2.5rem;
+    padding: 0 1rem;
+    background: #a7e200;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: .3 ease;
+      &:hover{
+        color: #a7e200;
+        background-color: #2c3849;
+        transition: .3 ease;
+      }
+    }
+
+    &-btn-sec{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: .875rem;
+      line-height: 1.14;
+      height: 2.5rem;
+      padding: 0 1rem;
+      background: #2c3849;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+
+    &-btn-conf{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: .875rem;
+      line-height: 1.14;
+      height: 2.5rem;
+      padding: 0 1rem;
+      background: #2c3849;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+
+  }
+  &__desc{
+    padding: 12px 0;
+    font-family: 'PF-Din-Display-Pro';
+    font-size: .75rem;
+    line-height: 1.33;
+    color: #8490a4;
+    margin-bottom: 1rem;
+  }
+
+  &__structure{
+    border-top: 1px solid #2c3849;
+    padding-top: 40px;
+    &-li{
+      margin-bottom: 11px;
+      display: flex;
+      column-gap: 10%;
+      &-subtitle{
+        font-size: .75rem;
+        line-height: 1.33;
+        color: #8490a4;
+        margin-bottom: 1px;
+      }
+      &-img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+    
+  }
+
+}

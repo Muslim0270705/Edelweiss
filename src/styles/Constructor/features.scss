@@ -1,0 +1,45 @@
+.features{
+  margin-bottom: 78px;
+  &__wrapper{
+    position: relative;
+    padding: 40px;
+    background: #1c232e;
+  }
+
+  &__title{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+
+  &__ul{
+    display: flex;
+    margin-right: 40px;
+    column-gap: 40px;
+    margin-right: 350px;
+
+    & .border-right{
+      border-right: 1px solid #3f4c5f;
+    }
+  }
+
+  &__li{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text{
+    margin-top: 17px;
+    font-family: 'PF-Din-Display-Pro';
+  }
+
+  &__img-box{
+    width: 380px;
+    height: 325px;
+    position: absolute;
+    top: -55px;
+    right: 0;
+  }
+
+}
