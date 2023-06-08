@@ -19,7 +19,7 @@ const PowerPc = () => {
         third='Качественные компаненты, классный дизайн, крутые игровые ПК EDELWEISS'
         img={img}
       />
-      <CardRow/>
+      <CardRow limit={5} />
     </main>
   );
 }

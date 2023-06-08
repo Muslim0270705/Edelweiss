@@ -29,7 +29,7 @@ const Inexpensive = () => {
         third='Возможность купить дёшево компьютер - универсальное решение для дома и офиса'
         img={img}
       />
-      <CardRow/>
+      <CardRow limit={5} bal={"123"}/>
     </main>
   );
 }
