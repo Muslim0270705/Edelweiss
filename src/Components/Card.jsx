@@ -18,13 +18,13 @@ const Card = ({item}) => {
     <div className='card'>
         <div className="card__content">
           <Link to='#' className='card__img'>
-            <img src={item.img} alt="" />
+            <img src={item?.img} alt="" />
           </Link>
 
           <div className="card__wrapper">
-            <Link className="card__title title" >{item.title}</Link>
+            <Link className="card__title title" >{item?.title}</Link>
             <div className="card__price">
-              <span className="card__price-text">{item.price}</span>
+              <span className="card__price-text">{item?.price}</span>
               <span>
                 <img src={rub} alt="" />
               </span>
@@ -44,7 +44,7 @@ const Card = ({item}) => {
           </div>
 
           <p className="card__desc">
-            {item.desc}
+            {item?.desc}
           </p>
 
           <ul className="card__structure">
@@ -52,70 +52,70 @@ const Card = ({item}) => {
               <img className='card__structure-li-img' src={iVideo__card} alt="" />
               <div className='card__structure-li-right'>
                 <p className='card__structure-li-subtitle'>Видео-карта</p>
-                <p className='card__structure-li-title'>{item.GPU}</p>
+                <p className='card__structure-li-title'>{item?.GPU}</p>
               </div>
             </li>
             <li className='card__structure-li'>
               <img className='card__structure-li-img' src={iCp} alt="" />
               <div className='card__structure-li-right'>
                 <p className='card__structure-li-subtitle'>Процессор</p>
-                <p className='card__structure-li-title'>{item.CPU}</p>
+                <p className='card__structure-li-title'>{item?.CPU}</p>
               </div>
             </li>
             <li className='card__structure-li'>
               <img className='card__structure-li-img' src={iCooler} alt="" />
               <div className='card__structure-li-right'>
                 <p className='card__structure-li-subtitle'>Охлаждение</p>
-                <p className='card__structure-li-title'>{item.Cooler}</p>
+                <p className='card__structure-li-title'>{item?.Cooler}</p>
               </div>
             </li>
             <li className='card__structure-li'>
               <img className='card__structure-li-img' src={iRam} alt="" />
               <div className='card__structure-li-right'>
                 <p className='card__structure-li-subtitle'>Оперативная память</p>
-                <p className='card__structure-li-title'>{item.RAM}</p>
+                <p className='card__structure-li-title'>{item?.RAM}</p>
               </div>
             </li>
             <li className='card__structure-li'>
               <img className='card__structure-li-img' src={iMtbrd} alt="" />
               <div className='card__structure-li-right'>
                 <p className='card__structure-li-subtitle'>Материнская плата</p>
-                <p className='card__structure-li-title'>{item.Motherboard}</p>
+                <p className='card__structure-li-title'>{item?.Motherboard}</p>
               </div>
             </li>
             <li className='card__structure-li'>
               <img className='card__structure-li-img' src={iHard} alt="" />
               <div className='card__structure-li-right'>
                 <p className='card__structure-li-subtitle'>Жёсткий диск</p>
-                <p className='card__structure-li-title'>{item.HDD}</p>
+                <p className='card__structure-li-title'>{item?.HDD}</p>
               </div>
             </li>
             <li className='card__structure-li'>
               <img className='card__structure-li-img' src={iSsd} alt="" />
               <div className='card__structure-li-right'>
                 <p className='card__structure-li-subtitle'>Диск SSD</p>
-                <p className='card__structure-li-title'>{item.SSD}</p>
+                <p className='card__structure-li-title'>{item?.SSD}</p>
               </div>
             </li>
             <li className='card__structure-li'>
               <img className='card__structure-li-img' src={iBp} alt="" />
               <div className='card__structure-li-right'>
                 <p className='card__structure-li-subtitle'>Блок питания</p>
-                <p className='card__structure-li-title'>{item.BP}</p>
+                <p className='card__structure-li-title'>{item?.BP}</p>
               </div>
             </li>
             <li className='card__structure-li'>
               <img className='card__structure-li-img' src={iCase} alt="" />
               <div className='card__structure-li-right'>
                 <p className='card__structure-li-subtitle'>Корпус</p>
-                <p className='card__structure-li-title'>{item.Case}</p>
+                <p className='card__structure-li-title'>{item?.Case}</p>
               </div>
             </li>
             <li className='card__structure-li'>
               <img className='card__structure-li-img' src={iOs} alt="" />
               <div className='card__structure-li-right'>
                 <p className='card__structure-li-subtitle'>Система</p>
-                <p className='card__structure-li-title'>{item.OS}</p>
+                <p className='card__structure-li-title'>{item?.OS}</p>
               </div>
             </li>
           </ul>
