@@ -19,7 +19,7 @@ const Catalog = () => {
           <button className="btn-secondary catalog-title-btn"><Link to={''}>Смотреть все</Link></button>
         </div>
 
-        <div className="catalog__row">
+        <div className="catalog__row" style={{alignItems:"start"}}>
           {
             list.map(item => (
                 <Card item={item}/>

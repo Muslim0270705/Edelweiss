@@ -128,12 +128,13 @@ img{
 }
 .popup{
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
+  scrollbar-gutter: auto;
   top: 0;
   left: 0;
   background: #00000099;
-  z-index: 100;
+  z-index: 100000;
   text-align: center;
   .popup__close {
     position: absolute;
@@ -159,8 +160,22 @@ img{
   }
   &__row{
     display: flex;
-    gap: 30px;
-    align-items: center;
+    gap: 20px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 12px;               /* ширина scrollbar */
+    }
+    &::-webkit-scrollbar-track {
+      background: orange;        /* цвет дорожки */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: blue;    /* цвет плашки */
+      border-radius: 20px;       /* закругления плашки */
+      border: 3px solid orange;  /* padding вокруг плашки */
+    }
+    padding: 50px;
+    height: 500px;
+    align-items: start;
     flex-wrap: wrap;
   }
 
@@ -180,4 +195,5 @@ img{
 @import "./Constructor/titlePage.scss";
 @import "./Constructor/features.scss";
 @import "./game.scss";
-@import "./basket.scss"
+@import "./basket.scss";
+@import "cart";

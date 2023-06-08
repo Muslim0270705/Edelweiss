@@ -53,11 +53,11 @@
     -webkit-border-radius: 4px;
     border-radius: 4px;
     text-transform: uppercase;
-    transition: .3 ease;
+    transition: .3s;
       &:hover{
         color: #a7e200;
         background-color: #2c3849;
-        transition: .3 ease;
+        transition: .3s;
       }
     }
 
@@ -104,6 +104,13 @@
   &__structure{
     border-top: 1px solid #2c3849;
     padding-top: 40px;
+    position: relative;
+    &-close{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
     &-li{
       margin-bottom: 11px;
       display: flex;

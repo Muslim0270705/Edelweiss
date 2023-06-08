@@ -51,6 +51,8 @@ const Header = () => {
   // setInterval(() => {
   //   console.log(active)
   // },1000)
+  const {cart} = useSelector(store => store.comp)
+
   return (
     <header className='header' style={{ marginTop: sticky.offset}}>
       <div className="header__head">
@@ -190,10 +192,10 @@ const Header = () => {
                 </div>
 
                 <div className="header__control-box">
-                  <Link to=''>
+                  <Link to='/cart'>
                     <div className="header__control-link-icon-box" >
                       <MdOutlineShoppingCart />
-                      <span className="header__control-sum">0</span>
+                      <span className="header__control-sum">{cart.length}</span>
                     </div>
                   </Link>
                 </div>
@@ -211,10 +213,11 @@ const Header = () => {
                 <div className="popup__row">
                   { title.length ?
                       list.map(item => (
-                          <div className="popup__card">
-                            <img className="popup__card-img" src={item.img} alt=""/>
-                            {item.title}
-                          </div>
+                          // <div className="popup__card">
+                          //   <img className="popup__card-img" src={item.img} alt=""/>
+                          //   {item.title}
+                          // </div>
+                          <Card item={item}/>
                       ))
                       : ""
                   }

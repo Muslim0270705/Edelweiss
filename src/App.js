@@ -12,7 +12,9 @@ import PowerfullPc from './pages/PowerfullPc/PowerfullPc';
 import PcAmd from './pages/PcAmd/PcAmd';
 import Game from './pages/Game/Game';
 import Basket from './pages/Basket/Basket';
- 
+import Cart from './pages/Cart/Cart';
+import Pc from './pages/Pc/Pc';
+
 
 function App() {
   return (
@@ -25,9 +27,11 @@ function App() {
                   <Route path={'/power-pc'} element={<PowerPc/>}/>
                   <Route path={'/powerfull-pc'} element={<PowerfullPc/>}/>
                   <Route path={'/pc-amd'} element={<PcAmd/>}/>
+                  <Route path={'/cart'} element={<Cart/>}/>
                   <Route path={'/game'} element={<Game/>}/>
                   <Route path={'/cart'} element={<Basket/>}/>
                   <Route path={'*'} element={<NotFound/>}/>
+                  <Route path={'/pc/:id'} element={<Pc/>}/>
               </Route>
           </Routes>
       </div>

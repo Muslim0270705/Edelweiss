@@ -24,11 +24,18 @@ const compSlice = createSlice({
     initialState: {
         list: [],
         isLoading: false,
-        title:""
+        title:"",
+        cart:[]
     },
     reducers: {
         Search: (state,{payload}) => {
             state.title = payload
+        },
+        addCart:(state,{payload}) => {
+            state.cart.find(item => item.id == payload.id) ? state.cart = [...state.cart] : state.cart = [...state.cart,payload]
+        },
+        deleteCart:(state,{payload}) => {
+            state.cart = state.cart.filter(item => item.id !== payload.id)
         }
     },
     extraReducers: (builder) => {
@@ -46,6 +53,6 @@ const compSlice = createSlice({
 });
 
 
-export const {Search} = compSlice.actions
+export const {Search,addCart,deleteCart} = compSlice.actions
 export default compSlice.reducer
 
